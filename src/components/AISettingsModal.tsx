@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, Cpu, Key, Check, Shield, Zap, Sparkles } from 'lucide-react';
 import { AISettings } from '../types';
 
+//Rounak
 interface AISettingsModalProps {
   isOpen: boolean;
   onClose: () => void;
