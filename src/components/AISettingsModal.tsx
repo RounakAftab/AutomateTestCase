@@ -60,11 +60,10 @@ export const AISettingsModal: React.FC<AISettingsModalProps> = ({
               <button
                 type="button"
                 onClick={() => setLocalSettings({ ...localSettings, provider: 'offline_heuristic' })}
-                className={`p-3 rounded-xl border text-left transition-all ${
-                  localSettings.provider === 'offline_heuristic'
-                    ? 'bg-sky-500/15 border-sky-500 text-white ring-1 ring-sky-500/40'
-                    : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700'
-                }`}
+                className={`p-3 rounded-xl border text-left transition-all ${localSettings.provider === 'offline_heuristic'
+                  ? 'bg-sky-500/15 border-sky-500 text-white ring-1 ring-sky-500/40'
+                  : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700'
+                  }`}
               >
                 <div className="flex items-center gap-1.5 font-bold text-xs text-sky-400 mb-1">
                   <Zap className="w-3.5 h-3.5" />
@@ -78,11 +77,10 @@ export const AISettingsModal: React.FC<AISettingsModalProps> = ({
               <button
                 type="button"
                 onClick={() => setLocalSettings({ ...localSettings, provider: 'gemini' })}
-                className={`p-3 rounded-xl border text-left transition-all ${
-                  localSettings.provider === 'gemini'
-                    ? 'bg-indigo-500/15 border-indigo-500 text-white ring-1 ring-indigo-500/40'
-                    : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700'
-                }`}
+                className={`p-3 rounded-xl border text-left transition-all ${localSettings.provider === 'gemini'
+                  ? 'bg-indigo-500/15 border-indigo-500 text-white ring-1 ring-indigo-500/40'
+                  : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700'
+                  }`}
               >
                 <div className="flex items-center gap-1.5 font-bold text-xs text-indigo-400 mb-1">
                   <Sparkles className="w-3.5 h-3.5" />
@@ -137,6 +135,7 @@ export const AISettingsModal: React.FC<AISettingsModalProps> = ({
                 </span>
               </div>
             </div>
+
           )}
         </div>
 
